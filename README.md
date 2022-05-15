@@ -1,6 +1,6 @@
 # **Udemy Tutorial - The Git & Github Bootcamp ***Colt Steele*****
 
-## Introducing Git
+## **Introducing Git**
 The world's most popular version control system. It is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and effciency.
 - What exactly is version control?
   - It is software that tracks and manages changes to files over time.
@@ -31,4 +31,25 @@ The world's most popular version control system. It is a free and open source di
     |:---                                                                         |                                                                               :---|
     |Git is the version control software that runs locally on your machine.You don't need to register for an account. You don't need the internet to use it. You can use Git without ever touching Github.                                         |Github is a service that hosts Git repositories in the cloud and makes it easier to collaborate with other people. You do need to sign up for an account to use Github. It's an online place to share work that is done using Git.                    |
 
+## **Installation & Setup**
+- Windows /macOS /Linux Git installation
+  - [Download for Windows /macOS /Linux ](https://git-scm.com/downloads)
 
+- Configuring You Git Name & Email
+  - Checking user name: `$ git config user.name`
+  - Checking user email: `$ git config user.email`
+  - Configuring user name: `$ git config --global user.name Bruce Lee`
+  - Configuring user name: `$ git config --global user.email bruceLee@gmail.com
+
+## **The Very Basics of Git: Adding & Committing**
+- Repositiory is a workspace which tracks and manages files within a folder.
+- **git status** gives information on the current status of a git repository and its contents `$ git status`
+- Use **git init** to create a new git repository. Before we can do anything git-related, we must initialize a repo first! `$ git init`
+- Warning: Do not init a repo inside of a repo!
+- The basic Git workflow
+  |Work On Stuff|Add Changes|Commit|
+  |:---         |:---       |:---  |
+  |Make new files, edit files, delete files, etc|Group specific changes together, in preparation of committing|Commit everything that was previously added|
+- Use **git add** specific files to the staging area. Separate files with spaces to add multiple at once. `$ git add file1 file2`
+- We use the **git commit** command to actually commit changes from the staging area. The `-m` flag allows us to pass in an inline commit message, rather than launching a text editor. `$ git commit -m "my first commit"`
+- Use **git add .** to stage all changes at once. `$ git add .`
