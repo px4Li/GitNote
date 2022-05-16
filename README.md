@@ -53,3 +53,6 @@ The world's most popular version control system. It is a free and open source di
 - Use **git add** specific files to the staging area. Separate files with spaces to add multiple at once. `$ git add file1 file2`
 - We use the **git commit** command to actually commit changes from the staging area. The `-m` flag allows us to pass in an inline commit message, rather than launching a text editor. `$ git commit -m "my first commit"`
 - Use **git add .** to stage all changes at once. `$ git add .`
+- Git docs recommend use present tense. But past tense also good and make sense.
+- Running `git commit` will commit all staged changes. It also opens up a text editor and prompts you for a commit message.
+- Showing every first line of log `git log --oneline`
