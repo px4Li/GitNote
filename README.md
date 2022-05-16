@@ -56,3 +56,4 @@ The world's most popular version control system. It is a free and open source di
 - Git docs recommend use present tense. But past tense also good and make sense.
 - Running `git commit` will commit all staged changes. It also opens up a text editor and prompts you for a commit message.
 - Showing every first line of log `git log --oneline`
+- Amending commit can correct **just one commit message ago**. Use `git commit --amend` and directly modify it by editor.
