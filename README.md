@@ -61,3 +61,7 @@ The world's most popular version control system. It is a free and open source di
   - .DS_Store will ignore files named .DS_Store
   - folderName/ will ignore an entire directory
   - *.log will ignore any files with the .log extension
+
+##  **Working With Branches**
+- Braches enable us to create separate contexts where we can try new things, or even work on multiple ideas in parallel.
+- The default branch name of Git is **master** that doesn't do anything special or have fancy powers. Github renamed the default branch from master to main.
