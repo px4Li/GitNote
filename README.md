@@ -69,3 +69,4 @@ The world's most popular version control system. It is a free and open source di
 - Use **git branch** to view your existing branches.
 - Use **git branch <branch-name>** to make a new branch based upon the current HEAD but it won't move to the branch.
 - Use **git switch <branch-name>** or **git checkout <branch-name>** to switch to it.
+- Use **git switch** with the **-c** flag to create a new branch and switch to it all in one go.
