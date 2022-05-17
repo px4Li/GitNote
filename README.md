@@ -57,3 +57,7 @@ The world's most popular version control system. It is a free and open source di
 - Running `git commit` will commit all staged changes. It also opens up a text editor and prompts you for a commit message.
 - Showing every first line of log `git log --oneline`
 - Amending commit can correct **just one commit message ago**. Use `git commit --amend` and directly modify it by editor.
+- We can tell Git which files and directories to ignore in a given repository, using a **.gitignore** file. Inside the file, we can write patters to tell Git which files & folders to ignore:
+  - .DS_Store will ignore files named .DS_Store
+  - folderName/ will ignore an entire directory
+  - *.log will ignore any files with the .log extension
