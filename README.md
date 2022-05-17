@@ -65,3 +65,7 @@ The world's most popular version control system. It is a free and open source di
 ##  **Working With Branches**
 - Braches enable us to create separate contexts where we can try new things, or even work on multiple ideas in parallel.
 - The default branch name of Git is **master** that doesn't do anything special or have fancy powers. Github renamed the default branch from master to main.
+- **HEAD** is simply a pointer that refers to the current "location" in your repository. It points to a particular branch reference.
+- Use **git branch** to view your existing branches.
+- Use **git branch <branch-name>** to make a new branch based upon the current HEAD but it won't move to the branch.
+- Use **git switch <branch-name>** or **git checkout <branch-name>** to switch to it.
