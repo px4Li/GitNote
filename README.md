@@ -77,8 +77,11 @@ The world's most popular version control system. It is a free and open source di
   
     <img src="switch2master.png" width="654" height="284"></p>
   
-  - Use the git merge command to merge changes from a specific branch into the current branch. `git merge specific_branch` 
-  
+  - Use the git merge command to merge changes from a specific branch into the current branch. `git merge specific_branch`
+    
     <img src="merge2master.png" width="654" height="284"></p>
+  - Rather than performing a simple fast forward, git performs a "merge commit". We end up with a new commit on the master branch.
+  
+    <img src="merge_commit.png" width="654" height="284"></p>
   
   
