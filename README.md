@@ -72,3 +72,13 @@ The world's most popular version control system. It is a free and open source di
 - Use **git switch** with the **-c** flag to create a new branch and switch to it all in one go.
 - **-d** for deleting a branch. The branch must be fully merged in its upstream branch. **-D** is shortcut for **--delete --force**. If you delete a branch you have to HEAD any branch but not the branch.
 - **-m** for move/rename a branch and the corresponding reflog. **-M** is shortcut for **--move --force**. If you rename a branch but you have to HEAD the branch.
+- To merge, follow these basic steps:
+  - Switch to or checkout the branch you want to merge the changes into (the receiving branch) `git switch master`
+  
+    <img src="switch2master.png" width="654" height="284"></p>
+  
+  - Use the git merge command to merge changes from a specific branch into the current branch. `git merge specific_branch` 
+  
+    <img src="merge2master.png" width="654" height="284"></p>
+  
+  
