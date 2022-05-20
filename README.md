@@ -89,5 +89,8 @@ The world's most popular version control system. It is a free and open source di
   2. Edit the file(s) to remove the conflicts. Decide which branch's content you want to keep  in each conflict. Or keep the content from both.
   3. Remove the conflict "markers" in the document
   4. Add your changes and then make a commit!
+
+## Comparing Changes With Git Diff
+- We can use the **git diff** command to view changes between commits, branches, files, our working directory, and more! Compares staging area and working direcotyr.
   
   
