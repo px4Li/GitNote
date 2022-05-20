@@ -69,7 +69,7 @@ The world's most popular version control system. It is a free and open source di
 - Use **git branch** to view your existing branches.
 - Use **git branch <branch-name>** to make a new branch based upon the current HEAD but it won't move to the branch.
 - Use **git switch <branch-name>** or **git checkout <branch-name>** to switch to it.
-- Use **git switch** with the **-c** flag to create a new branch and switch to it all in one go.
+- Use **git switch** with the **-c** flag to create a new branch and switch to it all in one go. Or use **git branch -b <branch-name>**
 - **-d** for deleting a branch. The branch must be fully merged in its upstream branch. **-D** is shortcut for **--delete --force**. If you delete a branch you have to HEAD any branch but not the branch.
 - **-m** for move/rename a branch and the corresponding reflog. **-M** is shortcut for **--move --force**. If you rename a branch but you have to HEAD the branch.
 - To merge, follow these basic steps:
