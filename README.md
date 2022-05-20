@@ -92,5 +92,8 @@ The world's most popular version control system. It is a free and open source di
 
 ## Comparing Changes With Git Diff
 - We can use the **git diff** command to view changes between commits, branches, files, our working directory, and more! Compares staging area and working direcotyr.
-  
+- **git diff HEAD** lists all changes in the working tree since your last commit.
+- **git diff --staged** or **--cached** will list the changes between the staging area and our last commit.
+- We can view the changes within a specific file by providing git diff with a filename. **git diff HEAD [filename]** or **git diff --staged [filename]** 
+- **git diff branch1..branch2** will list the changes between the tips of branch1 and branch2.
   
