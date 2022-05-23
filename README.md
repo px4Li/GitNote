@@ -98,3 +98,10 @@ The world's most popular version control system. It is a free and open source di
 - **git diff branch1..branch2** will list the changes between the tips of branch1 and branch2.
 - **git diff commit1..commit2** will compare two commits, provide git diff with the commit hashes of the commits in question.
   
+## Why We Need Git Stash
+1. My changes come with me to the destination branch
+2. Git won't let me switch if it detects potential confilicts
+3. Git provides an easy way of stashing these uncommitted changes so that we can return to them later, without having to make unnecessary commits.
+4. **git stash** or **git stash save**are useful command that helps you save changes that you are not yet ready to commit. You can stash changes and then come back to them later.
+5. Use **git stash pop** to remove the most recently stashed changes in your stash and re-apply them to your working copy.
+6. You can use **git stash apply** to apply whatever is stashed away, without removing it from the stash. This can be useful if you want to apply stashed changes to multiple branches.
