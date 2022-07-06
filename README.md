@@ -105,3 +105,8 @@ The world's most popular version control system. It is a free and open source di
 4. **git stash** or **git stash save**are useful command that helps you save changes that you are not yet ready to commit. You can stash changes and then come back to them later.
 5. Use **git stash pop** to remove the most recently stashed changes in your stash and re-apply them to your working copy.
 6. You can use **git stash apply** to apply whatever is stashed away, without removing it from the stash. This can be useful if you want to apply stashed changes to multiple branches.
+7. **git stash list** to view all stashes.
+8. Git assumes you want to apply the most recent stash when you run **git stash apply**, but you can also specify a particular stash like **git stash apply stash@{2}**
+9. To delete a particular stash, you can use **git stash drop stash@{2}**
+10. To clear out all stashes, run **git stash clear**
+
