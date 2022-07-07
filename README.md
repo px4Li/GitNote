@@ -75,14 +75,14 @@ The world's most popular version control system. It is a free and open source di
 - To merge, follow these basic steps:
   - Switch to or checkout the branch you want to merge the changes into (the receiving branch) `git switch master`
   
-    <img src="switch2master.png" width="654" height="284"></p>
+    <p align="center"><img src="switch2master.png" width="654" height="284"></p>
   
   - Use the git merge command to merge changes from a specific branch into the current branch. `git merge specific_branch`
     
-    <img src="merge2master.png" width="654" height="284"></p>
+    <p align="center"><img src="merge2master.png" width="654" height="284"></p>
   - Rather than performing a simple fast forward, git performs a "merge commit". We end up with a new commit on the master branch.
   
-    <img src="merge_commit.png" width="654" height="284"></p>
+    <p align="center"><img src="merge_commit.png" width="654" height="284"></p>
   
 - Resolving Conflicts:
   1. Open up the file(s) with merge conflicts
@@ -110,3 +110,19 @@ The world's most popular version control system. It is a free and open source di
 9. To delete a particular stash, you can use **git stash drop stash@{2}**
 10. To clear out all stashes, run **git stash clear**
 
+## Undoing Changes & Time Traveling
+We can use checkout to create branches, switch to new branches, restore files, and undo history.
+1. Switch to view a previous commit: **git checkout commit <commit-hash>**
+  - After switch to a previous commit, then you are in **'deteched HEAD'** state.
+  - Stay in detached HEAD to examine the contents of the old commit. Poke around, view the files, etc.
+  - Leave and go back to wherever you were before reattach the HEAD
+  - Create a new branch and switch to it. You can now make and save changes, since HEAD is no longer detached.
+  - **HEAD** usually refers to a branch NOT a specific commit.
+
+    <p align="center"><img src="detached_head.png" width="578.4" height="348"></p>
+
+  - **git checkout HEAD~1** supports a slightly odd syntax for refencing previous commits relative to a particular commit.
+
+    <p align="center"><img src="git_checkout_head.png" width="690.6" height="241.2"></p>
+  
+  - **git switch -** undo operation, go back to previous HEAD position.
